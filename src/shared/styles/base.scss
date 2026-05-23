@@ -15,10 +15,22 @@ body {
   font-family: var(--font-family);
   color: var(--color-text);
   background: var(--color-bg);
+  scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 .container {
   max-width: 1450px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+main {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
 }

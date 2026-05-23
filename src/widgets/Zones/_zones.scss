@@ -1,7 +1,55 @@
 .zones {
-  background-image: url("/public/images/bg/zones.png");
-  background-position: center center; /* x y */
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/images/bg/zones.png");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+  }
+}
+
+.zones__content {
+  width: 100%;
+  border: 3px solid #fff;
+  border-radius: 70px;
+  max-width: 1700px;
+  padding: 0 90px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 43px;
+    text-transform: uppercase;
+    position: relative;
+    top: -25px;
+    z-index: 3;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 900px;
+      height: 65px;
+      background: var(--color-bg);
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.zones__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 90px;
+  position: relative;
+  z-index: 5;
 }

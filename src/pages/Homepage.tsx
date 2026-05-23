@@ -5,6 +5,7 @@ export const Homepage = () => {
     <>
       <Hero />
       <Zones />
+    
     </>
   );
 };
