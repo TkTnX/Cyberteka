@@ -1,0 +1,56 @@
+.book {
+  background-image: url("/images/bg/book.png");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book__title {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.book__wrapper {
+  background: var(--color-black);
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.book__content {
+  border: 3px solid rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  padding: 20px 45px 40px;
+}
+
+.book__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 44px;
+  gap: 20px 14px;
+  max-width: 448px;
+  justify-items: start;
+}
+
+.book__label {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.book__input {
+  width: 100%;
+  border-radius: 10px;
+  background: #030303;
+  padding: 10px 20px;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
