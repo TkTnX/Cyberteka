@@ -1,0 +1,41 @@
+.sale {
+  height: 310px;
+  background: #1b1b1b;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.sale__title {
+  text-transform: uppercase;
+}
+
+.sale__link {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.1s ease-in;
+
+  svg {
+    transition: all 0.1s ease-in;
+  }
+
+  &:hover {
+    opacity: 0.8;
+
+    svg {
+      transform: translateX(5px);
+    }
+  }
+}

@@ -3,3 +3,4 @@ export * from "./Navigation";
 export * from "./Zones";
 export * from "./Gallery";
 export * from "./Book";
+export * from './Sales'

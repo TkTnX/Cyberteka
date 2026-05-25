@@ -1,4 +1,4 @@
-import { Book, Gallery, Hero, Zones } from "../widgets";
+import { Book, Gallery, Hero, Sales, Zones } from "../widgets";
 
 export const Homepage = () => {
   return (
@@ -7,6 +7,7 @@ export const Homepage = () => {
       <Zones />
       <Gallery />
       <Book />
+      <Sales />
     </>
   );
 };
