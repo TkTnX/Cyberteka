@@ -1,4 +1,4 @@
-import "./_sale.scss"
+import "./_sale.scss";
 import { Link } from "react-router";
 import type { ISale } from "../../shared";
 import { ArrowRight } from "lucide-react";
@@ -8,9 +8,8 @@ interface Props {
 }
 
 export const Sale = ({ sale }: Props) => {
-    // TODO: Доделать sale
   return (
-    <div className="sale">
+    <div style={{ height: `${sale.height}px` }} className="sale">
       <h4 className="sale__title">{sale.title}</h4>
       <Link className="sale__link" to={`/sales/${sale.id}`}>
         {sale.linkLabel} <ArrowRight />

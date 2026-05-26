@@ -4,3 +4,4 @@ export * from "./Zones";
 export * from "./Gallery";
 export * from "./Book";
 export * from './Sales'
+export * from './Location'
