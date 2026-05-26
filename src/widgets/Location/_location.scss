@@ -1,3 +1,5 @@
+@use "/src/shared/styles/mixins" as *;
+
 .location {
   background-image: url("/images/bg/location.png");
   background-position: center center; /* x y */
@@ -9,6 +11,15 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  @include xl {
+    flex-direction: column;
+    height: unset;
+  }
+
+  @include sm {
+    gap: 200px;
+  }
 }
 
 .location__content {
@@ -17,6 +28,10 @@
   background: #0e0e0e;
   padding: 50px 50px 40px;
   width: 580px;
+
+  @include md {
+    width: 100%;
+  }
 }
 
 .location__title {
@@ -51,12 +66,20 @@
     font-weight: 400;
     color: #3e3e3e;
   }
+
+  @include sm {
+    font-size: 16px;
+  }
 }
 
 .location__contacts {
   margin-top: 40px;
   display: grid;
   gap: 9px;
+
+  @include sm {
+    font-size: 16px;
+  }
 }
 
 .location__contact {
@@ -89,14 +112,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include sm {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 .location__loc {
   border-radius: 30px;
   overflow: hidden;
+  @include xl {
+    width: 100%;
+
+    border-radius: 0;
+  }
 }
 
 .location__map {
   width: 820px;
   height: 580px;
+
+  @include xl {
+    width: 100%;
+    height: 1000px;
+  }
 }

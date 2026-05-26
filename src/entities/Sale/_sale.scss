@@ -1,3 +1,5 @@
+@use "/src/shared/styles/mixins" as *;
+
 .sale {
   margin-bottom: 20px;
   break-inside: avoid;
@@ -11,6 +13,12 @@
 
   &:hover {
     transform: translateY(-5px);
+  }
+
+  @include lg {
+    &:nth-child(n + 4) {
+      display: none;
+    }
   }
 }
 

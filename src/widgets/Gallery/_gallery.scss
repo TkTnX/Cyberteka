@@ -1,5 +1,6 @@
+@use "/src/shared/styles/mixins" as *;
 .gallery {
-    background-color: var(--color-black);
+  background-color: var(--color-black);
   background-image: url("/images/bg/gallery.png");
   background-position: center center; /* x y */
   background-size: cover;
@@ -13,12 +14,20 @@
 
 .gallery__swiper {
   height: calc(100% - 150px);
+
+  @include lg {
+    height: calc(100% - 500px);
+  }
 }
 
 .gallery__swiper-slide {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+
+  @include lg {
+    max-width: 900px !important;
+  }
 }
 
 .gallery__swiper-image {
@@ -49,6 +58,10 @@
     width: 40px;
     height: 23px;
   }
+
+  @include lg {
+    display: none !important;
+  }
 }
 .swiper-button-next {
   right: 140px !important;
@@ -63,5 +76,8 @@
     background-repeat: no-repeat;
     width: 40px;
     height: 23px;
+  }
+  @include lg {
+    display: none !important;
   }
 }

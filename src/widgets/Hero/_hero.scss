@@ -1,3 +1,4 @@
+@use "/src/shared/styles/mixins" as *;
 .hero {
   background-color: #999;
   background-image: url("/images/bg/hero.jpg");
@@ -19,6 +20,12 @@
   display: flex;
   align-items: center;
   gap: 47px;
+
+  @include sm {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
 }
 
 .hero__title {
@@ -31,6 +38,15 @@
     font-weight: 600;
     font-size: 45px;
     font-style: normal;
+  }
+
+  @include lg {
+    font-size: 64px;
+    line-height: 0.8;
+  }
+
+  @include sm {
+    font-size: 48px;
   }
 }
 
@@ -51,8 +67,22 @@
       transform: translateY(-50%);
     }
   }
+
+  @include md {
+    font-size: 24px;
+  }
+
+  @include sm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .hero__content-button {
   margin-top: 58px;
+  @include sm {
+    width: 100% !important;
+  }
 }

@@ -1,3 +1,5 @@
+@use "/src/shared/styles/mixins" as *;
+
 .sales {
   padding: 134px 0 200px;
   background: var(--color-black);
@@ -43,4 +45,16 @@
   column-count: 3;
   position: relative;
   z-index: 1;
+
+  @include lg {
+    column-count: 1;
+  }
+}
+
+.sales__button {
+  width: 100%;
+  display: none;
+  @include lg {
+    display: block;
+  }
 }

@@ -1,9 +1,11 @@
+@use "/src/shared/styles/mixins" as *;
 .zones {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  overflow: hidden;
   &::before {
     content: "";
     position: absolute;
@@ -14,6 +16,11 @@
     height: 100%;
     width: 100%;
     z-index: 4;
+  }
+
+  @include xl {
+    height: unset;
+    padding: 100px 0;
   }
 }
 
@@ -43,6 +50,13 @@
       transform: translateX(-50%);
     }
   }
+  @include lg {
+    padding: 0 15px;
+  }
+
+  @include xl {
+    border: none;
+  }
 }
 
 .zones__list {
@@ -53,4 +67,12 @@
   padding-bottom: 90px;
   position: relative;
   z-index: 5;
+
+  @include xl {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

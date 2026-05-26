@@ -1,3 +1,5 @@
+@use "/src/shared/styles/mixins" as *;
+
 .navigation {
   display: flex;
   flex-direction: column;
@@ -7,11 +9,34 @@
   transform: translateY(-50%);
   left: 20px;
   z-index: 10;
+
+  @include xl {
+    transform: translateY(0);
+    top: 0;
+    width: 100%;
+  }
+
+  @include md {
+    display: none;
+  }
+}
+
+.navigation__list {
+  gap: 30px;
+  padding: 20px 0;
+
+  @include xl {
+    display: flex;
+  }
 }
 
 .navigation__item {
   &:not(:first-child) {
     margin-top: 30px;
+
+    @include xl {
+      margin-top: 0;
+    }
   }
 }
 
@@ -29,5 +54,24 @@
 
   @media (max-width: 1600px) {
     font-size: 24px;
+  }
+
+  @include xl {
+    writing-mode: unset;
+  }
+}
+
+.navigation__button {
+  position: fixed;
+  top: 26px;
+  right: 26px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 10;
+  @include md {
+    display: flex;
   }
 }

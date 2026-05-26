@@ -1,3 +1,5 @@
+@use "/src/shared/styles/mixins" as *;
+
 .book {
   background-image: url("/images/bg/book.png");
   background-position: center center; /* x y */
@@ -8,11 +10,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .book__title {
   font-weight: 600;
   font-size: 30px;
+
+  @include md {
+    font-size: 25px;
+  }
 }
 
 .book__wrapper {
@@ -33,6 +40,10 @@
 .book__form {
   margin-top: 44px;
   max-width: 448px;
+
+  @include lg {
+    max-width: unset;
+  }
 }
 
 .book__inputs {
@@ -88,4 +99,8 @@
   position: absolute;
   top: 58px;
   right: -115px;
+
+  @include md {
+    display: none;
+  }
 }
