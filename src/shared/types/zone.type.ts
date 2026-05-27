@@ -4,6 +4,7 @@ export interface IZone {
   images: string[];
   feature: string;
   subtitle: string;
+  color: string;
   characteristics: ICharacteristic[];
   prices: IPrice[];
 }
@@ -22,4 +23,5 @@ export interface IPrice {
   image: string;
   rate: string;
   price: number;
+  borderColor: string;
 }
