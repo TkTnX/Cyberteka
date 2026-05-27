@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./shared/styles/base.scss";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { Homepage } from "./pages";
+import { Homepage, Zones } from "./pages";
 import { RootLayout } from "./layouts";
 
 const router = createBrowserRouter([
@@ -12,6 +12,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Homepage />,
+      },
+      {
+        path: "/zones",
+        element: <Zones />,
       },
     ],
   },

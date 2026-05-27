@@ -1,0 +1,42 @@
+.bigZone {
+  padding: 170px 0;
+
+  background-image: url("/images/bg/zones.png");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bigZone__title {
+  font-weight: 900;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-style: italic;
+
+  span {
+    color: #e637b7;
+  }
+}
+
+.bigZone__characteristics-title {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bigZone__characteristics-list {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.bigZone__prices{
+    margin-top: 40px;
+}
+
+.bigZone__prices-title {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
