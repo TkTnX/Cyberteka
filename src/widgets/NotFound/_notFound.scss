@@ -1,0 +1,43 @@
+.notFound {
+  background-image: url("/images/bg/notFound.svg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.notFound__container {
+  display: flex;
+  align-items: center;
+}
+
+.notFound__title {
+  display: flex;
+  align-items: center;
+  font-size: 200px;
+  font-weight: bold;
+
+  img {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.notFound__subtitle {
+  font-size: 24px;
+  margin-top: 13px;
+}
+
+.notFound__description {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 16px;
+
+  span {
+    font-weight: 700;
+  }
+}

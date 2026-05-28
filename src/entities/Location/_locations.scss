@@ -1,3 +1,5 @@
+@use "/src/shared/styles/mixins" as *;
+
 .locations {
   padding: 50px 60px;
   position: absolute;
@@ -8,6 +10,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include xl {
+    width: 100%;
+  }
 }
 
 .profLocation {
@@ -35,6 +41,14 @@
 
   span {
     font-size: 30px;
+
+      @include lg {
+    font-size: 20px;
+  }
+  }
+
+  @include lg {
+    font-size: 48px;
   }
 }
 
@@ -46,4 +60,9 @@
   font-weight: 600;
   color: #fff;
   display: inline-block;
+
+  @include lg {
+    font-size: 18px;
+    padding: 9px 18px;
+  }
 }

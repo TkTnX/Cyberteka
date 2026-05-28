@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./shared/styles/base.scss";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { Homepage, StartPage, ZonesPage } from "./pages";
+import { Homepage, NotFoundPage, StartPage, ZonesPage } from "./pages";
 import { EmptyLayout, RootLayout } from "./layouts";
 
 const router = createBrowserRouter([
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: <NotFoundPage />
+  }
 ]);
 
 createRoot(document.getElementById("root")!).render(

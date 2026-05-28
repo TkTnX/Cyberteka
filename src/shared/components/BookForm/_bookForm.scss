@@ -18,6 +18,8 @@
 .book__form {
   margin-top: 44px;
   max-width: 448px;
+  position: relative;
+  z-index: 10;
 
   @include lg {
     max-width: unset;
