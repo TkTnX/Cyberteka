@@ -1,0 +1,49 @@
+.locations {
+  padding: 50px 60px;
+  position: absolute;
+
+  height: 50vh;
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profLocation {
+  right: 0;
+  top: 0;
+  background-image: url("/images/locations/prof.jpg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.baumanaLocation {
+  background-image: url("/images/locations/baumana.jpg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 0;
+}
+
+.locations__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 0.6;
+
+  span {
+    font-size: 30px;
+  }
+}
+
+.locations__link {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 18px 28px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+}

@@ -2,7 +2,7 @@ import { BigZone } from "../entities";
 import { ZONES } from "../shared";
 import { ClubMap } from "../widgets";
 
-export const Zones = () => {
+export const ZonesPage = () => {
   return (
     <>
       {ZONES.map((zone) => (

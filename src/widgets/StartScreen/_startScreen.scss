@@ -1,0 +1,72 @@
+@use "/src/shared/styles/mixins" as *;
+
+.startScreen {
+  background-image: url("/images/bg/zones.png");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.startScreen__content {
+  width: 100%;
+}
+
+.startScreen__text {
+  max-width: 600px;
+}
+
+.startScreen__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.startScreen__content-top {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+
+  @include sm {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+.startScreen__title {
+  font-size: 100px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.5;
+
+  span {
+    font-weight: 600;
+    font-size: 45px;
+    font-style: normal;
+  }
+
+  @include lg {
+    font-size: 64px;
+    line-height: 0.8;
+  }
+
+  @include sm {
+    font-size: 48px;
+  }
+}
+
+.startScreen__text {
+  margin-top: 45px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.startScreen__content-button {
+    margin-top: 40px;
+}

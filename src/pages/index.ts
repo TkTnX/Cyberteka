@@ -1,2 +1,3 @@
 export * from './Homepage'
-export * from './Zones'
+export * from './ZonesPage'
+export * from './StartPage'

@@ -6,3 +6,4 @@ export * from "./Book";
 export * from './Sales'
 export * from './Location'
 export * from './ClubMap'
+export * from './StartScreen'
