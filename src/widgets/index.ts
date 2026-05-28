@@ -5,3 +5,4 @@ export * from "./Gallery";
 export * from "./Book";
 export * from './Sales'
 export * from './Location'
+export * from './ClubMap'

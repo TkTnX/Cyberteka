@@ -1,0 +1,84 @@
+@use "/src/shared/styles/mixins" as *;
+
+.book__wrapper {
+  background: var(--color-black);
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 50px;
+  position: relative;
+}
+
+.book__content {
+  border: 3px solid rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  padding: 20px 45px 40px;
+}
+
+.book__form {
+  margin-top: 44px;
+  max-width: 448px;
+
+  @include lg {
+    max-width: unset;
+  }
+}
+
+.book__inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 14px;
+}
+
+.book__label {
+  grid-column: 1 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #030303;
+  padding-left: 20px;
+  input {
+    max-width: 100px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.book__input {
+  border-radius: 10px;
+  background: #030303;
+  padding: 10px 20px;
+  min-width: 0;
+  width: 100%;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.book__textarea {
+  grid-column: 1/4;
+  min-height: 154px;
+  resize: none;
+}
+
+.book__button {
+  margin-top: 33px;
+  max-width: 250px;
+  padding: 10px 20px;
+}
+.book__image {
+  position: absolute;
+  top: 58px;
+  right: -115px;
+
+  @include md {
+    display: none;
+  }
+}

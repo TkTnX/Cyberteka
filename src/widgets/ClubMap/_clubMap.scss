@@ -1,0 +1,53 @@
+@use "/src/shared/styles/mixins" as *;
+.clubMap {
+  padding: 170px 0;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -300px;
+    left: -350px;
+    background-image: url("/images/bg/clubMap-top.svg");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1322px;
+    height: 1322px;
+    transform: rotate(35deg);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -300px;
+    right: -350px;
+    background-image: url("/images/bg/clubMap-bottom.svg");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2000px;
+    height: 2000px;
+  }
+}
+
+.clubMap__container {
+  position: relative;
+  overflow-x: visible;
+}
+
+.clubMap__title {
+  font-weight: 900;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-style: italic;
+
+  @include md {
+    font-size: 50px;
+  }
+}
+
+.clubMap__image {
+  margin-top: 54px;
+  position: relative;
+  z-index: 1;
+}
