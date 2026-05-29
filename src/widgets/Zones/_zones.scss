@@ -18,8 +18,12 @@
     z-index: 4;
   }
 
-  @include xl {
+  @media (max-width: 1600px) {
     height: unset;
+    padding: 100px 0;
+  }
+
+  @include xl {
     padding: 100px 0;
   }
 }

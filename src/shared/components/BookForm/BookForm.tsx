@@ -25,7 +25,6 @@ export const BookForm = () => {
               placeholder="Время"
               name="time"
             />
-            {/* TODO: Секции забронируй место и акции */}
             <label className="book__label">
               Количество гостей
               <input type="number" placeholder="1" className="book__input" />

@@ -6,9 +6,6 @@ import "./_bigZone.scss";
 interface Props {
   zone: IZone;
 }
-// TODO: Сделать зону приставок
-// TODO: Изменять бг у разных
-// TODO: Реализовать карту клуба
 export const BigZone = ({ zone }: Props) => {
   return (
     <section className="bigZone">
