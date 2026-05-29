@@ -1,7 +1,7 @@
 @use "/src/shared/styles/mixins" as *;
 .gallery {
   background-color: var(--color-black);
-  background-image: url("/images/bg/gallery.png");
+  background-image: url("/images/bg/gallery.webp");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
