@@ -1,6 +1,7 @@
-import { Suspense } from "react";
-import { Book, Gallery, Hero, Location, Sales, Zones } from "../widgets";
-
+import { lazy, Suspense } from "react";
+import { Book, Hero, Sales, Zones } from "../widgets";
+const Location = lazy(() => import("../widgets/Location/Location"));
+const Gallery = lazy(() => import("../widgets/Gallery/Gallery"));
 export const Homepage = () => {
   return (
     <>
@@ -11,7 +12,9 @@ export const Homepage = () => {
       </Suspense>
       <Book />
       <Sales />
-      <Location />
+      <Suspense fallback={null}>
+        <Location />
+      </Suspense>
     </>
   );
 };

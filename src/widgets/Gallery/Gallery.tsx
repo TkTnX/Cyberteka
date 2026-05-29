@@ -5,7 +5,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-export const Gallery = () => {
+ const Gallery = () => {
   return (
     <section className="gallery">
       <Swiper
@@ -91,3 +91,4 @@ export const Gallery = () => {
     </section>
   );
 };
+export default Gallery

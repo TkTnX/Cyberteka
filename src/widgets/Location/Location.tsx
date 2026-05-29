@@ -1,7 +1,7 @@
 import { Map, YMaps } from "@pbe/react-yandex-maps";
 import { Button } from "../../shared";
 import "./_location.scss";
-export const Location = () => {
+const Location = () => {
   return (
     <section className="location">
       <div className="location__content">
@@ -54,3 +54,5 @@ export const Location = () => {
     </section>
   );
 };
+
+export default Location;
