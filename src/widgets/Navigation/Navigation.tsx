@@ -22,7 +22,11 @@ export const Navigation = () => {
           ))}
         </ul>
       </nav>
-      <button className="navigation__button">
+      <button
+        aria-label="Open menu"
+        name="Open menu"
+        className="navigation__button"
+      >
         <Menu strokeWidth={3} size={50} />
       </button>
     </>
