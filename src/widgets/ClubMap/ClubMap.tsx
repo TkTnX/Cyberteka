@@ -6,6 +6,7 @@ export const ClubMap = () => {
         <h1 className="clubMap__title">Карта клуба</h1>
         <div>
           <img
+            loading="lazy"
             src="/images/clubMap.svg"
             className="clubMap__image"
             alt="Карта клуба"

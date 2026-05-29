@@ -8,10 +8,18 @@ interface Props {
 export const Price = ({ price }: Props) => {
   return (
     <div className="price">
-      <div style={{ borderColor: price.borderColor }} className="price__content">
+      <div
+        style={{ borderColor: price.borderColor }}
+        className="price__content"
+      >
         <h4 className="price__title">{price.title}</h4>
         <p className="price__available">{price.available}</p>
-        <img className="price__image" src={price.image} alt={price.title} />
+        <img
+          loading="lazy"
+          className="price__image"
+          src={price.image}
+          alt={price.title}
+        />
         <p className="price__rate">{price.rate}</p>
         <p className="price__price">{price.price} ₽</p>
       </div>

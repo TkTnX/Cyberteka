@@ -14,7 +14,7 @@ export const Zone = ({ zone }: Props) => {
         <p className="zone__feature">{zone.feature}</p>
         <h3 className="zone__title">{zone.title}</h3>
         <div className="zone__image">
-          <img src={zone.images[0]} alt={zone.title} />
+          <img loading="lazy" src={zone.images[0]} alt={zone.title} />
         </div>
         <p className="zone__subtitle">{zone.subtitle}</p>
         <Link className="zone__link" to={`/zones/${zone.id}`}>

@@ -6,7 +6,12 @@ export const Hero = () => {
     <section className="hero">
       <div className="container hero__content">
         <div className="hero__content-top">
-          <img src="/images/icons/logo.svg" alt="Logo" />
+          <img
+            loading="lazy"
+            fetchPriority="high"
+            src="/images/icons/logo.svg"
+            alt="Logo"
+          />
           <div>
             <h1 className="hero__title">
               КИБЕРТЕКА <br /> <span>НА ПРОФСОЮЗНОЙ</span>

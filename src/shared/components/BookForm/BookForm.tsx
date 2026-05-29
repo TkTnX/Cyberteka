@@ -44,7 +44,12 @@ export const BookForm = () => {
           <Button className="book__button" text="Забронировать!" />
         </form>
       </div>
-      <img src="/images/book/book.png" alt="Book" className="book__image" />
+      <img
+        loading="lazy"
+        src="/images/book/book.png"
+        alt="Book"
+        className="book__image"
+      />
     </div>
   );
 };

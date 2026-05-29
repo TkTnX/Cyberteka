@@ -26,31 +26,66 @@ export const Gallery = () => {
         className="container gallery__swiper"
       >
         <SwiperSlide className="gallery__swiper-slide">
-          <img className="gallery__swiper-image" src="/images/gallery/01.webp" alt="Изображение" />
+          <img
+            loading="lazy"
+            className="gallery__swiper-image"
+            src="/images/gallery/01.webp"
+            alt="Изображение"
+          />
         </SwiperSlide>
 
         <SwiperSlide className="gallery__swiper-slide">
-          <img className="gallery__swiper-image" src="/images/gallery/01.webp" alt="Изображение" />
+          <img
+            loading="lazy"
+            className="gallery__swiper-image"
+            src="/images/gallery/01.webp"
+            alt="Изображение"
+          />
         </SwiperSlide>
 
         <SwiperSlide className="gallery__swiper-slide">
-          <img className="gallery__swiper-image" src="/images/gallery/01.webp" alt="Изображение" />
+          <img
+            loading="lazy"
+            className="gallery__swiper-image"
+            src="/images/gallery/01.webp"
+            alt="Изображение"
+          />
         </SwiperSlide>
 
         <SwiperSlide className="gallery__swiper-slide">
-          <img className="gallery__swiper-image" src="/images/gallery/01.webp" alt="Изображение" />
+          <img
+            loading="lazy"
+            className="gallery__swiper-image"
+            src="/images/gallery/01.webp"
+            alt="Изображение"
+          />
         </SwiperSlide>
 
         <SwiperSlide className="gallery__swiper-slide">
-          <img className="gallery__swiper-image" src="/images/gallery/01.webp" alt="Изображение" />
+          <img
+            loading="lazy"
+            className="gallery__swiper-image"
+            src="/images/gallery/01.webp"
+            alt="Изображение"
+          />
         </SwiperSlide>
 
         <SwiperSlide className="gallery__swiper-slide">
-          <img className="gallery__swiper-image" src="/images/gallery/01.webp" alt="Изображение" />
+          <img
+            loading="lazy"
+            className="gallery__swiper-image"
+            src="/images/gallery/01.webp"
+            alt="Изображение"
+          />
         </SwiperSlide>
 
         <SwiperSlide className="gallery__swiper-slide">
-          <img className="gallery__swiper-image" src="/images/gallery/01.webp" alt="Изображение" />
+          <img
+            loading="lazy"
+            className="gallery__swiper-image"
+            src="/images/gallery/01.webp"
+            alt="Изображение"
+          />
         </SwiperSlide>
       </Swiper>
     </section>

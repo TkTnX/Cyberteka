@@ -11,7 +11,7 @@ export const Characteristic = ({char}: Props) => {
       <div className="char__content">
         <h3 className="char__title">{char.title}</h3>
         <p className="char__value">{char.value}</p>
-        <img className="char__image" src={char.image} />
+        <img className="char__image" src={char.image} loading="lazy" />
         </div>
     </div>
   )

@@ -5,7 +5,7 @@ export const StartScreen = () => {
     <section className="startScreen">
       <div className="container startScreen__content">
         <div className="startScreen__content-top">
-          <img src="/images/icons/logo.svg" alt="Logo" />
+          <img loading="lazy" src="/images/icons/logo.svg" alt="Logo" />
           <div>
             <h1 className="startScreen__title">
               КИБЕРТЕКА <br /> <span>НА ПРОФСОЮЗНОЙ</span>
