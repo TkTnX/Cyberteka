@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="container hero__content">
         <div className="hero__content-top">
           <img
-            loading="lazy"
+     
             fetchPriority="high"
             src="/images/icons/logo.svg"
             alt="Logo"
