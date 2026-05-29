@@ -10,7 +10,7 @@ interface Props {
 export const Sale = ({ sale }: Props) => {
   return (
     <div style={{ height: `${sale.height}px` }} className="sale">
-      <h4 className="sale__title">{sale.title}</h4>
+      <h3 className="sale__title">{sale.title}</h3>
       <Link className="sale__link" to={`/sales/${sale.id}`}>
         {sale.linkLabel} <ArrowRight />
       </Link>

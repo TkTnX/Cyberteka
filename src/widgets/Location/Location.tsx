@@ -22,30 +22,33 @@ export const Location = () => {
           </p>
           <p className="location__contact">
             Телефон: <span>+7 977 320 88 88</span>
-            <a href="#!">
+            <a aria-label="Перейти в TG" href="#!">
               <img src="/images/icons/tg.svg" alt="Телеграм" />
             </a>
-            <a href="#!">
+            <a aria-label="Перейти в WhatsApp" href="#!">
               <img src="/images/icons/wa.svg" alt="Ватцап" />
             </a>
           </p>
         </div>
         <div className="location__questions">
-          <h6>По вопросам сотрудничества</h6>
+          <b>По вопросам сотрудничества</b>
           <p>
             Коммерческие предложения можно направить в группу ВК или в Телеграм
           </p>
         </div>
         <div className="location__buttons">
           <Button text="Забронировать!" />
-          <a href="#!">
-            <img src="/images/icons/vk.svg" />
+          <a aria-label="Перейти в ВК" href="#!">
+            <img src="/images/icons/vk.svg" alt="vk" />
           </a>
         </div>
       </div>
       <div className="location__loc">
         <YMaps>
-          <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }} className="location__map" />
+          <Map
+            defaultState={{ center: [55.75, 37.57], zoom: 9 }}
+            className="location__map"
+          />
         </YMaps>
       </div>
     </section>
